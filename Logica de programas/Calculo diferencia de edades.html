@@ -1,0 +1,27 @@
+<meta charset = "utf-8">
+
+<h3>Calculo de diferencia de edades</h3>
+
+<script>
+function saltarLinea() {
+document.write("<br><br>")
+}
+function imprimir(frase) {
+document.write(frase)
+saltarLinea();
+}
+var anho = 2023
+var miEdad = (anho-1994)
+var edadDeMiHermano = (anho-1995)
+var edadDeFabiola = (anho-1996)
+var diferenciaDeEdadConHermano = (miEdad-edadDeMiHermano)
+var diferenciadeEdadConFabiola = (miEdad-edadDeFabiola)
+
+alert("Vamos a ver la diferencia de edad entre Fabiola, mi hermano, y yo.")
+imprimir("Yo tengo " + miEdad + " años.")
+imprimir("Mi hermano tiene " + edadDeMiHermano + " años.")
+imprimir("la edad de Fabiola son " + edadDeFabiola + " años.")
+imprimir("la diferencia de edad entre yo y mi hermano son " + diferenciaDeEdadConHermano + " años.")
+imprimir("la diferencia de edad con Fabiola son " + diferenciadeEdadConFabiola + " años")
+imprimir("Soy " + diferenciaDeEdadConHermano + " años mas grande que mi hermano, y " + diferenciadeEdadConFabiola + " años mas grandes que Fabiola.")
+</script>
