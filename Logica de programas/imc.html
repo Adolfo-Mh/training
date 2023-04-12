@@ -1,0 +1,82 @@
+<meta charset = "UTF-8">
+
+<h1>Calculacion - Indice Masa Corporal</h1>
+
+<script>
+
+function saltarLinea()  {
+
+    document.write("<br><br><br>");
+
+}
+
+function imprimir (frase)  {
+
+    document.write(frase);
+    saltarLinea();
+}
+
+pesoAdolfo = 93
+alturaAdolfo = 1.70
+imcAdolfo = (pesoAdolfo/(alturaAdolfo**2)).toFixed()
+pesoFabiola = 106
+alturaFabiola = 1.56
+imcFabiola = (pesoFabiola/(alturaFabiola**2)).toFixed()
+
+
+imprimir("El IMC de Adolfo es: " + imcAdolfo + ".")
+imprimir("El IMC de Fabiola es: " + imcFabiola + ".")
+
+imprimir("los dos estamos sobre peso :(")
+
+// Siguiente ejercicio***********************************************************************************************************************
+
+
+function calcularImc(peso,altura,persona)  {
+imc = (peso/(altura**2)).toFixed(0)
+imprimir("el IMC de " + persona + " es de " + imc + ".");
+
+}
+
+calcularImc(120,2.2,"Miguel");
+
+calcularImc(150,3,"Daniel");
+
+function calcularImcPromedio(peso1,altura1,persona1,peso2,altura2,persona2) {
+imc1 = (peso1/(altura1**2));
+imc2 = (peso2/(altura2**2));
+imprimir("el IMC promedio entre " + persona1 + " y " + persona2 + ", es de " + ((imc1+imc2)/2).toFixed(0) + ".");
+}
+
+calcularImcPromedio(120,2.2,"Miguel",150,3,"Daniel");
+
+// Siguiente ejercicio***********************************************************************************************************************
+
+
+function calcularImc2(peso3,altura3) {
+return peso3/(altura3**2);
+
+}
+var imcGabriela = calcularImc2(60,1.6);
+var imcEstefania = calcularImc2(50,1.7);
+
+calcularImc(60,1.6,"Gabriela");
+
+calcularImc(50,1.7,"Estefania");
+
+imprimir ("El promedio de IMC entre Gabriela y Estefania es de " + ((imcGabriela+imcEstefania)/2).toFixed() + ".");
+
+
+
+
+// Siguiente ejercicio***********************************************************************************************************************
+
+
+nombre = prompt("informe su nombre")
+pesoInformado = prompt(nombre + "informe su peso");
+alturaInformado = prompt(nombre + "informe su altura");
+imcCalculado = calcularImc2(pesoInformado,alturaInformado);
+
+imprimir(nombre + ", el IMC calculado de usted es: " + (imcCalculado).toFixed() + ". <br><br>Que tenga buen dia!);
+
+</script>
